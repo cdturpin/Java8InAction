@@ -15,7 +15,7 @@ public class OnlineBankingLambda {
     }
 
     // dummy Customer class
-    static private class Customer {}
+    static class Customer {}
     // dummy Database class
     static private class Database{
         static Customer getCustomerWithId(int id){ return new Customer();}

@@ -1,11 +1,15 @@
 package lambdasinaction.chap10;
 
-import org.junit.*;
+import static java.util.Optional.empty;
+import static java.util.Optional.of;
+import static java.util.Optional.ofNullable;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.*;
+import java.util.Optional;
+import java.util.Properties;
 
-import static java.util.Optional.*;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+
 
 public class ReadPositiveIntParam {
 
@@ -31,7 +35,7 @@ public class ReadPositiveIntParam {
         String value = props.getProperty(name);
         if (value != null) {
             try {
-                int i = Integer.parseInt(value);
+                Integer i = Integer.parseInt(value);
                 if (i > 0) {
                     return i;
                 }

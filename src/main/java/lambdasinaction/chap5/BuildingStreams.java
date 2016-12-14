@@ -8,7 +8,7 @@ import java.nio.file.*;
 
 public class BuildingStreams {
 
-    public static void main(String...args) throws Exception{
+    public static void main(String...args) throws Exception{ 
         
         // Stream.of
         Stream<String> stream = Stream.of("Java 8", "Lambdas", "In", "Action");

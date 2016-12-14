@@ -9,7 +9,7 @@ public class Grouping {
 
     enum CaloricLevel { DIET, NORMAL, FAT };
 
-    public static void main(String ... args) {
+    public static void main(String ... args) { 
         System.out.println("Dishes grouped by type: " + groupDishesByType());
         System.out.println("Dishes grouped by caloric level: " + groupDishesByCaloricLevel());
         System.out.println("Dishes grouped by type and caloric level: " + groupDishedByTypeAndCaloricLevel());
@@ -20,7 +20,7 @@ public class Grouping {
         System.out.println("Caloric levels by type: " + caloricLevelsByType());
     }
 
-    private static Map<Dish.Type, List<Dish>> groupDishesByType() {
+    private static Map<Dish.Type, List<Dish>> groupDishesByType() { 
         return menu.stream().collect(groupingBy(Dish::getType));
     }
 

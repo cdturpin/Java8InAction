@@ -13,7 +13,7 @@ public class StreamForker<T> {
     private final Stream<T> stream;
     private final Map<Object, Function<Stream<T>, ?>> forks = new HashMap<>();
 
-    public StreamForker(Stream<T> stream) {
+    public StreamForker(Stream<T> stream) { 
         this.stream = stream;
     }
 
